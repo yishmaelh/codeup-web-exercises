@@ -92,7 +92,7 @@ alert("You should tip " + "$" +( Number(percentage * billAmount)));
 
 
 /**
- * TODO:
+ *
  * Create a function named `applyDiscount`. This function should accept a price
  * (before a discount is applied), and a discount percentage (a number between 0
  * and 1). It should return the result of applying the discount to the original
