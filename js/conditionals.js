@@ -1,3 +1,5 @@
+// noinspection EqualityComparisonWithCoercionJS
+
 "use strict";
 
 /* ########################################################################## */
@@ -120,7 +122,7 @@ function calculateTotal(luckyNumber,initialTotal){
 
 
 /**
- * TODO:
+ *
  * Uncomment the line below to generate a random number between 0 and 6.
  * Prompt the user for their total bill, then use your `calculateTotal` function
  * and alerts to display to the user what their lucky number was, what their
@@ -129,6 +131,10 @@ function calculateTotal(luckyNumber,initialTotal){
 // Generate a random number between 0 and 6
  var luckyNumber = Math.floor(Math.random() * 6);
 
+var totalBill = prompt("What is your total bill?");
+alert("Your lucky number is " + luckyNumber);
+alert("Your price before the discount is " + totalBill);
+alert("Your new total bill is " + calculateTotal(luckyNumber,totalBill));
 
 
 /**
@@ -147,3 +153,29 @@ function calculateTotal(luckyNumber,initialTotal){
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+var answer = confirm("Would you like to enter a number?");
+if (answer) {
+    var number = prompt("Enter a number");
+    if (isNaN(number)) {
+        alert("That is not a number")
+    } else {
+        number = parseFloat(number);
+        if (number % 2 == 0) {
+            alert("That is an even number");
+        } else {
+            alert("That is an odd number");
+        }
+        alert("Your number + 100 is " + Number(number+100));
+        if (number < 0) {
+            alert("Your number is negative");
+        } else {
+            alert("Your number is positive");
+        }
+    }
+}
+
+
+
+
+
