@@ -9,8 +9,10 @@ console.log("Hello from external JavaScript");
 var userInput = prompt("What is your favorite color?");
 console.log('User entered: ' + userInput);
 
-if(userInput = "Red") {
+if(userInput == "Red") {
     alert("Red is also my favorite color!");
+} else {
+    alert("That is a great color!")
 }
 
 // Exercise 3 answers (previous assigment

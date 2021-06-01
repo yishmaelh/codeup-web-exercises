@@ -107,5 +107,8 @@ alert("You should tip " + "$" +( Number(percentage * billAmount)));
  */
 
 function applyDiscount(initialPrice, discountPercentage){
-    return initialPrice * discountPercentage
+    var result = initialPrice - (initialPrice * discountPercentage);
+    return result;
 }
+
+console.log(applyDiscount(45.99, 0.12));
