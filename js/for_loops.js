@@ -22,11 +22,11 @@ showMultiplicationTable(8)
 }
  */
 
-
-for(let i = 1; i < 10; i++ ) {
-    let s = ''.repeat( 10 - i )+ ( i + '' ).repeat(i);
-    console.log(s);
-}
+//
+// for(let i = 1; i < 10; i++ ) {
+//     let s = ''.repeat( 10 - i )+ ( i + '' ).repeat(i);
+//     console.log(s);
+// }
 
 
 
