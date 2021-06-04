@@ -5,7 +5,7 @@
         console.log(x + " x " + i + " = " + (x * i))
 }
 
-showMultiplicationTable(5)
+showMultiplicationTable(8)
 */
 
 /*for (let x =10; x<=200; x++) {
@@ -20,12 +20,14 @@ showMultiplicationTable(5)
         console.log(number + " is odd");
     }
 }
-*/
+ */
+
 
 for(let i = 1; i < 10; i++ ) {
     let s = ''.repeat( 10 - i )+ ( i + '' ).repeat(i);
     console.log(s);
 }
+
 
 
 
