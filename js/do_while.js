@@ -9,7 +9,7 @@ let coneInventory = 0;
 
 do {
     let soldCones = Math.floor(Math.random() * (5 - 1 + 1) + 1);
-        console.log("The customer asked for " + soldCones + "cones");
+        console.log("The customer asked for " + soldCones + " cones");
 
     if ((coneInventory + soldCones) > allCones) {
         console.log("I cannot sell " + soldCones + " cones");
