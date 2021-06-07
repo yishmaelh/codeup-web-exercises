@@ -31,7 +31,7 @@
      */
 
     /**
-     * TODO:
+     *
      * Create the following three functions, each will accept an array and
      * return an an element from it
      * - first: returns the first item in the array
@@ -65,7 +65,7 @@ let names = ['Yish', 'Blaze', 'Lurati', 'Viz'];
 
 
 
-for (var index = 0; index < names.length; index++); {
+for (var index = 0; index < names.length; index++) {
     console.log("The name at index " + index + " is " + names[index]);
 }
 
