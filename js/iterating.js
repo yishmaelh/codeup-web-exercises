@@ -48,20 +48,20 @@
 
 let names = ['Yish', 'Blaze', 'Lurati', 'Viz'];
 
-// console.log("Display the number of elements in the array.");
-// console.log(names.length);
-//
-// console.log("List the first name in the array");
-// console.log(names[0]);
-//
-// console.log("List the second name in the array");
-// console.log(names[1]);
-//
-// console.log("List the third name in the array");
-// console.log(names[2]);
-//
-// console.log("List the last name in the array");
-// console.log(names[3]);
+console.log("Display the number of elements in the array.");
+console.log(names.length);
+
+console.log("List the first name in the array");
+console.log(names[0]);
+
+console.log("List the second name in the array");
+console.log(names[1]);
+
+console.log("List the third name in the array");
+console.log(names[2]);
+
+console.log("List the last name in the array");
+console.log(names[3]);
 
 
 
