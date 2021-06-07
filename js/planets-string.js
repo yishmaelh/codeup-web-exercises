@@ -27,11 +27,15 @@
 })();
 
 var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+console.log(planetsString)
 
 var planetsArray = planetsString.split('|');
 console.log(planetsArray)
 
-planetsString = "<br>Mercury</br>", "<br>Venus</br>","<br>Earth</br>", "<br>Mars</br>", "<br>Jupiter</br>", "<br>Saturn</br>", "<br>Uranus</br>", "<br>Neptune</br>";
+var listofPlanets = planetsArray.join(" <br> ")
+console.log(listofPlanets);
+
+
 
 //var planetList = <ul>"<li>Mercury</li>", "<li>Venus</li>","<li>Earth</li>", "<li>Mars</li>", "<li>Jupiter</li>", "<li>Saturn</li>", "<li>Uranus</li>", "<li>Neptune</li>"</ul>
 
