@@ -5,7 +5,7 @@
     var planetsArray;
 
     /**
-     * TODO:
+     *
      * Convert planetsString to an array, and save it in a variable named
      * planetsArray.
      * console.log planetsArray to check your work
@@ -14,7 +14,7 @@
     // console.log(planetsArray);
 
     /**
-     * TODO:
+     *
      * Create a string with <br> tags between each planet. console.log() your
      * results. Why might this be useful?
      *
@@ -25,3 +25,14 @@
      */
 
 })();
+
+var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+
+var planetsArray = planetsString.split('|');
+console.log(planetsArray)
+
+planetsString = "<br>Mercury</br>", "<br>Venus</br>","<br>Earth</br>", "<br>Mars</br>", "<br>Jupiter</br>", "<br>Saturn</br>", "<br>Uranus</br>", "<br>Neptune</br>";
+
+//var planetList = <ul>"<li>Mercury</li>", "<li>Venus</li>","<li>Earth</li>", "<li>Mars</li>", "<li>Jupiter</li>", "<li>Saturn</li>", "<li>Uranus</li>", "<li>Neptune</li>"</ul>
+
+
