@@ -110,7 +110,7 @@ let shoppers =  [
 ];
 function hebDiscount(object){
     if(object.amount > 200){
-        console.log(object.name + " will is eligible for a discount, his total is " + "$" + (object.amount - (object.amount * .12)) + "." + " His original total was " + object.amount + ".")
+        console.log(object.name + " will is eligible for a discount, his total is " + "$" + (object.amount - (object.amount * .12)) + "." + " His original total was " + "$"+ object.amount + ".")
     } else if(object.amount <= 200){
         console.log(object.name + " is not eligible for a discount, his total is " +"$" + object.amount + ".")
     }
