@@ -42,7 +42,7 @@
     //     {name: 'George', amount: 320}
     // ]
 
-    /** TODO:
+    /**
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
@@ -56,7 +56,7 @@
      */
 
     /**
-     * TODO:
+     *
      * Loop through the books array and output the following information about
      * each book:
      * - the book number (use the index of the book in the array)
@@ -117,6 +117,49 @@ function hebDiscount(object){
 }
 
 shoppers.forEach(hebDiscount);
+
+
+var books = [
+    {
+        title: "Villains by Necessity",
+        author: {
+            firstName: "Eve",
+            lastName: "Forward"
+        }
+    },
+    {
+        title: "The Art of War",
+        author: {
+            firstName: "Sun",
+            lastName: "Tzu"
+        }
+    },
+    {
+        title: "Invest Like a Guru",
+        author: {
+            firstName: "Charlie",
+            lastName: "Tian"
+        }
+    },
+    {
+        title: "The Automatic Millionaire",
+        author: {
+            firstName: "David",
+            lastName: "Bach"
+        }
+    },
+    {
+        title: "How to Win Friends and Influence People",
+        author: {
+            firstName: "Dale",
+            lastName: "Carnegie"
+        }
+    }
+];
+
+for (let bookNumber = 0; bookNumber <= 4; bookNumber++) {
+    console.log("Book # " + (bookNumber + 1) + "\n" + "Title: " + books[bookNumber].title + "\n" + "Author: " + books[bookNumber].author.firstName + " " + books[bookNumber].author.lastName + "\n");
+}
 
 
 
