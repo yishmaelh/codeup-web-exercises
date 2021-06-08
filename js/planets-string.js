@@ -32,11 +32,11 @@ console.log(planetsString)
 var planetsArray = planetsString.split('|');
 console.log(planetsArray)
 
-var listofPlanets = planetsArray.join(" <br> ")
-console.log(listofPlanets);
+var listOfPlanets = planetsArray.join("<br>")
+console.log(listOfPlanets);
+document.write(planetsArray)
 
 
 
-//var planetList = <ul>"<li>Mercury</li>", "<li>Venus</li>","<li>Earth</li>", "<li>Mars</li>", "<li>Jupiter</li>", "<li>Saturn</li>", "<li>Uranus</li>", "<li>Neptune</li>"</ul>
 
 
