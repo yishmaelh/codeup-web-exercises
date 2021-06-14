@@ -1,0 +1,18 @@
+
+
+.fancy-header {
+    color: rebeccapurple;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.h1 {
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+background{
+    background-repeat: no-repeat;
+}
+
+li{list-style: square}
