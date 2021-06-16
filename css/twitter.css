@@ -29,6 +29,7 @@ a {
     background: var(--light-bg);
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 .nav-item{
@@ -93,7 +94,8 @@ a {
 
 .timeline{
     width: calc(50% - 50px);
-    margin: .5em;
+    margin-left: .5em;
+    margin-right: .5em;
     float: left;
 }
 
@@ -111,26 +113,27 @@ a {
 .media{
     width: 100%;
     background-color: var(--light-bg);
-    border-bottom: 1px var(--separator-color);
+    border-bottom: 1px solid var(--separator-color);
     padding: .5em;
     overflow: auto;
 }
 
 .media-image{
-    width: 50px;
+    max-width: 50px;
     margin-top: 1.33em;
     float: left;
 }
 
 .media-body{
-    width: calc(100% - 10px);
-    float: left;
+    width: calc(100% - 50px);
+    float: right;
 }
 
 .profile-entry{
     margin: .5em;
 }
 
-.profile-entry{
-    margin: .5em;
+.profile-items{
+    list-style-type: none;
+    padding: 0;
 }
