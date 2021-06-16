@@ -57,6 +57,8 @@ a {
 
 .profile-image{
     position: absolute;
+    top: 16em;
+    z-index: 1000;
 }
 
 .profile-form{
