@@ -42,7 +42,7 @@ h2, h3 {
 section {
     display: flex;
     margin: .5em;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* enter needed declarations here */
 }
 
