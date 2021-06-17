@@ -89,8 +89,6 @@ section:nth-of-type(3) {
 
 section:nth-of-type(3) h3 {
     flex: auto;
-    display: flex;
-    align-items: center;
     /* enter needed declarations here */
 
 }
