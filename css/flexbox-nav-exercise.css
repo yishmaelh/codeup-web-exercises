@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: slategrey;
+    display: flex;
+}
+
+.logo{
+    padding: .2em 0;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    justify-self: center;
+}
+
+nav a:hover{
+    color:deepskyblue;
+}
+
+nav a{
+    display: inline-block;
+    color:darkred;
+    padding: 5px;
+    align-self: center;
+}
+
+.nav-items{
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-items:nth-child(3){
+    justify-content: flex-end;
+}
+
+
