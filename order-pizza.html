@@ -30,7 +30,7 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Zip code">
       <button class="btn btn-outline-secondary" type="submit">Search stores near you!</button>
     </form>
-    </div>
+  </div>
   <div>
     <i class="fas fa-user-plus"></i>
     Sign Up
@@ -41,18 +41,16 @@
     <h1 class="display-4 text-center bg-light">Welcome to Pizza World!</h1>
   </div>
   <h2>Build your own pizza!</h2>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#"><span class="badge badge-pill badge-light">1</span> Size and crust</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><span class="badge badge-pill badge-light">2</span> Cheese and Sauce</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><span class="badge badge-pill badge-light">3</span> Toppings</a>
-    </li>
-  </ul>
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-link active" id="nav-home-" data-toggle="tab" href="#" role="tab" aria-controls="nav-size/crust" aria-selected="true">Size and Crust</a>
+      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-cheese/sauce" aria-selected="false">Cheese and Sauce</a>
+      <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-toppings" aria-selected="false">Toppings</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
   <div class="card">
+    <div class="tab-pane fade show active" id="size/crust" role="tabpanel" aria-labelledby="size/crust">
     <div class="card-header bg-info text-white">
       Choose size and crust
     </div>
@@ -98,10 +96,8 @@
         </li>
       </ul>
     </div>
-    <div class="card-footer text-right">
-      <button class="btn bg-info text-white">Next Step &gt;</button>
-    </div>
   </div>
+  <div class="tab-pane" id="nav-cheese/sauce" role="tabpanel" aria-labelledby="nav-cheese/sauce-tab">
   <div class="card">
     <div class="card-header bg-info text-white">
       Choose cheese and sauce
@@ -127,6 +123,10 @@
       </div>
     </div>
   </div>
+  </div>
+  </div>
+  </div>
 </main>
 </body>
 </html>
+
