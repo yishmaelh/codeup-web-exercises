@@ -42,91 +42,117 @@
   </div>
   <h2>Build your own pizza!</h2>
   <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <a class="nav-link active" id="nav-home-" data-toggle="tab" href="#" role="tab" aria-controls="nav-size/crust" aria-selected="true">Size and Crust</a>
-      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-cheese/sauce" aria-selected="false">Cheese and Sauce</a>
-      <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-toppings" aria-selected="false">Toppings</a>
+    <div class="nav nav-tabs" id="nav-tab" >
+      <a class="nav-link active" id="nav-home-" data-toggle="tab" href="#crust" role="tab" aria-controls="nav-size/crust" aria-selected="true">Size and Crust</a>
+      <a class="nav-link" id="nav-cheese/sauce-tab" data-toggle="tab" href="#sauce" role="tab" aria-controls="nav-cheese/sauce" aria-selected="false">Cheese and Sauce</a>
+      <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#Toppings" role="tab" aria-controls="nav-toppings" aria-selected="false">Toppings</a>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
-  <div class="card">
-    <div class="tab-pane fade show active" id="size/crust" role="tabpanel" aria-labelledby="size/crust">
-    <div class="card-header bg-info text-white">
-      Choose size and crust
-    </div>
-    <div class="card-body">
+    <div class="tab-pane fade show active" id="crust" role="tabpanel" aria-labelledby="nav-home-">
       <div class="card">
-        <div class="card-header">
-          Hand Tossed
-        </div>
-        <div class="card-body">
-          <div>
-            <label>Garlic seasoned with a rich, buttery crust.</label>
+      <div class="card-header bg-info text-white">
+        Choose size and crust
+      </div>
+      <div class="card-body">
+        <div class="card">
+          <div class="card-header">
+            Hand Tossed
           </div>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <input id="small-10" type="radio" name="hand-tossed">
-              <label for="small-10"> Small. Enough for just one. (10")</label>
-            </li>
-            <li class="list-group-item">
-              <input id="medium-12" type="radio" name="hand-tossed">
-              <label for="medium-12"> Medium. In case you want to share. (12")</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header">
-      Crispy Thin
-    </div>
-    <div class="card-body">
-      <div>
-        <label>Thin enough for optimum crispy to crunchy ratio.</label>
-      </div>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <input id="crispy-medium" type="radio" name="crispy-thin">
-          <label for="crispy-medium"> Medium. In case you want to share (12")</label>
-        </li>
-        <li class="list-group-item">
-          <input id="crispy-large" type="radio" name="crispy-thin">
-          <label for="crispy-large"> Large. For when you're feeling generous. (14")</label>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="tab-pane" id="nav-cheese/sauce" role="tabpanel" aria-labelledby="nav-cheese/sauce-tab">
-  <div class="card">
-    <div class="card-header bg-info text-white">
-      Choose cheese and sauce
-    </div>
-    <div class="card-body">
-      <div class="card">
-        <div class="card-header">
-          Cheese
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="form-group">
-              <label for="cheese-amount">Select your amount of cheese.</label>
-              <select class="form-control" id="cheese-amount">
-                <option>Light</option>
-                <option>Normal</option>
-                <option>Extra</option>
-                <option>Double</option>
-              </select>
+          <div class="card-body">
+            <div>
+              <label>Garlic seasoned with a rich, buttery crust.</label>
             </div>
-          </form>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input id="small-10" type="radio" name="hand-tossed">
+                <label for="small-10"> Small. Enough for just one. (10")</label>
+              </li>
+              <li class="list-group-item">
+                <input id="medium-12" type="radio" name="hand-tossed">
+                <label for="medium-12"> Medium. In case you want to share. (12")</label>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <div class="card">
+      <div class="card-header bg-info text-white">
+        Crispy Thin
+      </div>
+      <div class="card-body">
+        <div>
+          <label>Thin enough for optimum crispy to crunchy ratio.</label>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <input id="crispy-medium" type="radio" name="crispy-thin">
+            <label for="crispy-medium"> Medium. In case you want to share (12")</label>
+          </li>
+          <li class="list-group-item">
+            <input id="crispy-large" type="radio" name="crispy-thin">
+            <label for="crispy-large"> Large. For when you're feeling generous. (14")</label>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  </div>
+    <div class="card tab-pane fade" id="sauce" role="tabpanel" aria-labelledby="nav-cheese/sauce-tab">
+      <div class="card-header bg-info text-white">
+        Choose cheese and sauce
+      </div>
+      <div class="card-body">
+        <div class="card">
+          <div class="card-header">
+            Cheese
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="cheese-amount">Select your amount of cheese.</label>
+                <select class="form-control" id="cheese-amount">
+                  <option>Light</option>
+                  <option>Normal</option>
+                  <option>Extra</option>
+                  <option>Double</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            Sauce
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="sauce-type">What type of sauce?</label>
+                <select class="form-control" id="sauce-type">
+                  <option>Tomato</option>
+                  <option>Marinara</option>
+                  <option>BBQ</option>
+                  <option>Alfredo</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sauce-amount">How much sauce?</label>
+                <select class="form-control" id="sauce-amount">
+                  <option>Light</option>
+                  <option>Normal</option>
+                  <option>Extra</option>
+                </select>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
   </div>
   </div>
 </main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
 
