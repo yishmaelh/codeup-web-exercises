@@ -6,6 +6,11 @@
 </head>
 <body>
 
+<button id="btn1">First Button</button>
+<button id="btn2">Second Button</button>
+<button id="btn3">Button Three</button>
+<button id="btn4">Last but not Least Button</button>
+
 <h1 id="main-header">Hello World!</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
@@ -35,7 +40,15 @@
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
         // I guess it is pretty cool...
 
-        mainHeader.innerHTML= "JavaScript is Cool"
+        //mainHeader.innerHTML= "JavaScript is Cool"
+
+        var firstChange = function () {
+            mainHeader.innerHTML = "JavaScript is Cool";
+        }
+
+        var btn1 = document.getElementById('btn1');
+        btn1.addEventListener('click', firstChange);
+
 
         // TODO: Uncomment the next line and get the sub header element by id
 
