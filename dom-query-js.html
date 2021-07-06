@@ -6,10 +6,10 @@
 </head>
 <body>
 
-<button id="btn1">First Button</button>
+<button id="btn1">JS is Cool</button>
 <button id="btn2">Blue Button</button>
-<button id="btn3">Button Three</button>
-<button id="btn4">Last but not Least Button</button>
+<button id="btn3">Grey Button</button>
+<button id="btn4">Accomplished Button</button>
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
@@ -31,7 +31,7 @@
 </p>
 
 <script>
-    (function() {
+    (function () {
         "use strict";
         //TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById('main-header');
@@ -67,21 +67,22 @@
 
         // TODO: Uncomment the next line and get all list items
 
-         var listItems = document.getElementsByTagName("li");
-         console.log(listItems);
+        var listItems = document.getElementsByTagName("li");
+        console.log(listItems);
 
         // TODO: Set text color on every other list item to grey
 
-        for(var index = 0; index < listItems.length; index++) {
+        for (var index = 0; index < listItems.length; index++) {
             if (index % 2 !== 0) {
                 listItems[index].style.color = 'grey';
             }
+
 
             // TODO: Set text color of li with dbid = 1 to blue
 
             var db = listItems[index].getAttribute('data-dbid')
 
-            if(db=== "1") {
+            if (db === "1") {
                 listItems[index].style.color = "blue";
             }
 
@@ -96,7 +97,8 @@
 
             subParagraphs[0].innerHTML = '<h1>Mission Accomplished!</h1>'
 
-        }})();
+        }
+    })();
 </script>
 </body>
 </html>
