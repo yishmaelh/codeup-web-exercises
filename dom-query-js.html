@@ -7,7 +7,7 @@
 <body>
 
 <button id="btn1">First Button</button>
-<button id="btn2">Second Button</button>
+<button id="btn2">Blue Button</button>
 <button id="btn3">Button Three</button>
 <button id="btn4">Last but not Least Button</button>
 
@@ -57,7 +57,13 @@
 
         // TODO: Set the text color of subHeader to blue
 
-        subHeader.style.color = "blue";
+        //subHeader.style.color = "blue";
+
+        var textBlue = function () {
+            subHeader.style.color = 'blue';
+        }
+        var btn2 = document.getElementById('btn2');
+        btn2.addEventListener('click', textBlue);
 
         // TODO: Uncomment the next line and get all list items
 
