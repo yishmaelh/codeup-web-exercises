@@ -22,3 +22,14 @@ console.log(max())
 
 // TODO: Create a function called mostOccurringNumber that accepts an array of numbers and returns the number that occurs the most within that array.
 
+
+
+var count = [];
+for (let i = 0; i < numbers.length; i++) {
+    var someNumbers = numbers[i];
+    if(count[someNumbers] === undefined) {
+        count[someNumbers] = 1;
+    } else {
+        count[someNumbers]++;
+    }
+}
