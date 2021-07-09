@@ -7,3 +7,4 @@
 
 var uc = $('#og-series').html();
 alert(uc);
+
