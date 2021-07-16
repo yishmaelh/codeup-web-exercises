@@ -30,5 +30,21 @@
             "tool"
         ],
         "price": 10
-    }
+    }, {
+    "title" : "Allen Wrench",
+    "quantity" : 3,
+    "categories" : [
+        "tool"
+    ],
+    "price" : 10
+},{
+    "title" : "Jackhammer",
+    "quantity" : 26,
+    "categories" :[
+        "tool",
+        "powered",
+        "outdoor"
+    ],
+    "price": 150
+}
 ]
