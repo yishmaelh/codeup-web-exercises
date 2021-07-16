@@ -41,7 +41,7 @@
                     var html = "";
                     $('#insertProducts').append(html);
                     for (let i = 0; i < data.length; i++) {
-                        html = ("<tr><td>" + data[i].title + "</td><td>" + data[i].price + "</td>" + "<td>" + data[i].quantity + "</td>");
+                        html = ("<tr><td>" + data[i].title + "</td><td>" + data[i].price + "</td>" + "<td>" + data[i].quantity + "</td><td>" + data[i].categories.join(", ") + "</tr>" );
 
                         $('#insertProducts').append(html);
                     }
