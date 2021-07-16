@@ -5,52 +5,56 @@
 </head>
 <body>
 
-<h1>My Tool Store</h1>
+<h1>Pretty Hard Tools</h1>
+
 
 <table id="products">
     <thead>
-        <tr>
-            <th>Title</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Categories</th>
-        </tr>
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Categories</th>
+    </tr>
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
+<button id="refresh_button">Refresh</button>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
-(function() {
-    "use strict";
-    // TODO: Create an AJAX GET request for the file under data/inventory.json
+    (function () {
+        "use strict";
+        // TODO: Create an AJAX GET request for the file under data/inventory.json
 
-    $(document).ready(function () {
+        $(document).ready(function () {
 
-        $.ajax("data/inventory.json", {
-            type: "GET",
-            dataType: "json"
-        })
-            .done(function (data) {
-                // console.log(data);
-                var html = "";
-                $('#insertProducts').append(html);
-                for (let i = 0; i < data.length; i++) {
-                    html = ("<tr><td>" + data[i].title + "</td><td>" + data[i].price + "</td>" + "<td>" + data[i].quantity + "</td>");
-
+            $.ajax("data/inventory.json", {
+                type: "GET",
+                dataType: "json"
+            })
+                .done(function (data) {
+                     console.log(data);
+                    var html = "";
                     $('#insertProducts').append(html);
-                }
-            }).fail(function (error) {
-            console.log("Error object: " + error);
-        })
-    })
+                    for (let i = 0; i < data.length; i++) {
+                        html = ("<tr><td>" + data[i].title + "</td><td>" + data[i].price + "</td>" + "<td>" + data[i].quantity + "</td>");
 
-    // TODO: Take the data from inventory.json and append it to the products table
-    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-    //             its contents and fields
-    //       HINT: You will want to target #insertProducts for your new HTML elements
-})();
+                        $('#insertProducts').append(html);
+                    }
+                }).fail(function (error) {
+                console.log("Error object: " + error);
+            })
+        })
+
+        // TODO: Take the data from inventory.json and append it to the products table
+        //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+        //             its contents and fields
+        //       HINT: You will want to target #insertProducts for your new HTML elements
+    })();
 </script>
 
 </body>
