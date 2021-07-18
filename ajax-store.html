@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html>
 <head>
     <title>Online Store</title>
@@ -43,17 +44,40 @@
                     for (let i = 0; i < data.length; i++) {
                         html = ("<tr><td>" + data[i].title + "</td><td>" + data[i].price + "</td>" + "<td>" + data[i].quantity + "</td><td>" + data[i].categories.join(", ") + "</tr>" );
 
-                        $('#insertProducts').append(html);
+                        $(`#insertProducts`).append(html);
                     }
                 }).fail(function (error) {
                 console.log("Error object: " + error);
             })
-        })
+        });
 
         // TODO: Take the data from inventory.json and append it to the products table
         //       HINT: Your data should come back as a JSON object; use console.log() to inspect
         //             its contents and fields
         //       HINT: You will want to target #insertProducts for your new HTML elements
+
+        function pullData() {
+            $.ajax("data/inventory.json", {
+                type: "GET",
+                dataType: "json"
+            })
+                .done(function (data) {
+                    console.log(data);
+                    var html = "";
+                    $("#insertProducts").empty()
+                    for (let i = 0; i < data.length; i++) {
+                        html = ("<tr><td>" + data[i].title + "</td><td>" + data[i].price + "</td>" + "<td>" + data[i].quantity + "</td><td>" + data[i].categories + "</td>");
+                        console.log(data);
+                        $("#insertProducts").append(html);
+                    }
+                });
+        }
+        $("#refresh_button").click(pullData);
+
+
+
+
+
     })();
 </script>
 
