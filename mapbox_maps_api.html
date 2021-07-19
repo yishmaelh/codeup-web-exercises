@@ -8,14 +8,33 @@
 </head>
 <body>
 <div id='map' style='width: 400px; height: 300px;'></div>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/keys.js"></script>
 <script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoieWlzaGgiLCJhIjoiY2tyNmpldnlrMHNxaDJwbnZiYzgzZGZmNSJ9.ftc2b8HOJdd_n-CIb67xZg';
+  mapboxgl.accessToken = MAPBOX_KEY
   var map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/streets-v11', // style URL
     center: [-74.5, 40], // starting position [lng, lat]
     zoom: 9 // starting zoom
   });
+
+  var favoritePlacesToEat = [
+      {
+          address: "2000 S Interstate 35,Round Rock, TX, 78681"
+      }
+  ]
+geocode(favoritePlacesToEat[0].address,MAPBOX_KEY)
+  .then(function (coordinates){
+      var marker = new mapboxgl.Marker()
+          .setLngLat(coordinates)
+          .addTo(map);
+      map.flyTo({
+          center:coordinates,
+          essential: true // this animation is considered essential with respect to prefers-reduced-motion
+      });
+      console.log(coordinates);
+  })
 </script>
 
 </body>
