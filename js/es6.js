@@ -93,4 +93,4 @@ for (let developer of developers){
 // });
 list += '</ul>';
 
-console.log(list);
+document.body.innerHTML = list;
