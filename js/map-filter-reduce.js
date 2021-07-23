@@ -60,6 +60,16 @@ console.log(tenure);
 
 //    TODO: 4. Use .reduce to get the longest email from the list of users.
 
+const longestEmail = users.reduce((currentEmail, user) => {
+    if (user.email.length > currentEmail.length){
+        return user.email;
+    }
+    else{
+        return currentEmail;
+    }
+},"");
+
+console.log(longestEmail);
 
 
 //    TODO: 5.Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
