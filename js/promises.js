@@ -1,3 +1,7 @@
 "use strict"
 
-fetch(url, {headers: {'Authorization': accessToken}});
+ let userAccess = fetch(url, {headers: {'Authorization': accessToken}});
+
+function lastCommit() {
+
+}
