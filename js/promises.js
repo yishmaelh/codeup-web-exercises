@@ -1,7 +1,8 @@
 "use strict"
 
- let userAccess = fetch(url, {headers: {'Authorization': accessToken}});
 
-function lastCommit() {
+
+function lastCommit(userName) {
+ return fetch('https://api.github.com/users/userName/events/public', {headers: {'Authorization': accessToken}});
 
 }
